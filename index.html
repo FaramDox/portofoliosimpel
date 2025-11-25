@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Profesional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(10px);
+      padding: 15px 0;
+      z-index: 100;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding-top: 60px;
+    }
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .hero h1 {
+      font-size: 2.50rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 80px auto;
+      background: rgba(255,255,255,0.1);
+      padding: 40px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .projects, .contact-info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: rgba(255,255,255,0.15);
+      padding: 20px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      background: rgba(255,255,255,0.3);
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.6);
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Tentang</a>
+      <a href="#projects">Project</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <img src="image/profildam.png" alt="Profile Photo">
+    <h1>Damar Adin Firdaus</h1>
+    <p>Web Developer | Designer | Creator</p>
+  </section>
+
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p style="text-align:center;">Saya adalah mahasiswa Teknologi Rekayasa Perangkat Lunak yang memiliki keahlian dalam pemrograman dasar, pembuatan flowchart, dan pengembangan aplikasi sederhana. Saya tertarik pada dunia software development dan terus belajar untuk meningkatkan kemampuan teknis saya.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Project Saya</h2>
+    <div class="projects">
+      <div class="project-card">💻 Landing Page Modern</div>
+      <div class="project-card">📊 Dashboard Analytics UI</div>
+      <div class="project-card">🎨 Personal Portfolio Web</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Kontak</h2>
+    <div class="contact-info">
+      <div>Email: mradinfirdaus@gmail.com</div>
+      <div>Instagram: @damaarf</div>
+      <div>LinkedIn: linkedin.com/in/Damar Adin Firdaus</div>
+    </div>
+  </section>
+</body>
+</html>
